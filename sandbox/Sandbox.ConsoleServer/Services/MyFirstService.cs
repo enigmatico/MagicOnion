@@ -12,7 +12,6 @@ namespace Sandbox.ConsoleServer.Services
         public async Task<UnaryResult<string>> SumAsync(int x, int y)
         {
             return UnaryResult((x + y).ToString());
-
         }
 
         public UnaryResult<string> SumAsync2(int x, int y)
@@ -26,7 +25,7 @@ namespace Sandbox.ConsoleServer.Services
 
             await stream.ForEachAsync(x =>
             {
-                
+
             });
 
             return stream.Result("finished");
